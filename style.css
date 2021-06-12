@@ -261,8 +261,9 @@ img {
   box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
 }
 .img {
-  height: 50%;
+  /* height: 50%; */
   width: auto;
+  max-width: 100%;
 }
 
 .services__icon1,
@@ -480,5 +481,28 @@ img {
     grid-template-columns: 1fr;
     gap: 50px;
     padding: 50px 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  #footer {
+    padding: 50px 50px;
+  }
+  #home .pink,
+  #home .violet {
+    font-size: 1em;
+  }
+  #footer p {
+    width: 200px;
+  }
+}
+
+@media (max-width: 300px) {
+  #home .pink,
+  #home .violet {
+    font-size: 0.8em;
+  }
+  body > header {
+    padding: 10px 30px;
   }
 }
